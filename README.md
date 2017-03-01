@@ -22,10 +22,3 @@ Erlang nif support copied from: https://github.com/fdmanana/snappy-erlang-nif
 make eunit
 
 ```
-
-## Versioning
-
-```
-<snappy-version>-<erlang-nif-version>
-```
-
