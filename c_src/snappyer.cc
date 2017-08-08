@@ -115,7 +115,7 @@ static inline ERL_NIF_TERM
 make_ok(ErlNifEnv* env, ERL_NIF_TERM mesg)
 {
     ERL_NIF_TERM ok = make_atom(env, "ok");
-    return enif_make_tuple2(env, ok, mesg);   
+    return enif_make_tuple2(env, ok, mesg);
 }
 
 
@@ -245,21 +245,21 @@ snappy_is_valid(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 }
 
 
-int
+static int
 on_load(ErlNifEnv* env, void** priv, ERL_NIF_TERM info)
 {
     return 0;
 }
 
 
-int
+static int
 on_reload(ErlNifEnv* env, void** priv, ERL_NIF_TERM info)
 {
     return 0;
 }
 
 
-int
+static int
 on_upgrade(ErlNifEnv* env, void** priv, void** old_priv, ERL_NIF_TERM info)
 {
     return 0;
