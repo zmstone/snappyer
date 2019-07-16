@@ -9,3 +9,4 @@ ebin/
 *.crashdump
 _build/
 rebar.lock
+.erlang.mk
