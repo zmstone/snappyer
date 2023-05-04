@@ -37,6 +37,7 @@
 #define THIRD_PARTY_SNAPPY_OPENSOURCE_SNAPPY_STUBS_PUBLIC_H_
 
 #include <stddef.h>
+#include <cstdint>
 
 typedef int8_t int8;
 typedef uint8_t uint8;
