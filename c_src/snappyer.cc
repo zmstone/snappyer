@@ -267,10 +267,10 @@ on_upgrade(ErlNifEnv* env, void** priv, void** old_priv, ERL_NIF_TERM info)
 
 
 static ErlNifFunc nif_functions[] = {
-    {"compress", 1, snappy_compress_erl},
-    {"decompress", 1, snappy_decompress_erl},
-    {"uncompressed_length", 1, snappy_uncompressed_length_erl},
-    {"is_valid", 1, snappy_is_valid}
+    {"compress", 1, snappy_compress_erl, ERL_NIF_DIRTY_JOB_CPU_BOUND},
+    {"decompress", 1, snappy_decompress_erl, ERL_NIF_DIRTY_JOB_CPU_BOUND},
+    {"uncompressed_length", 1, snappy_uncompressed_length_erl, ERL_NIF_DIRTY_JOB_CPU_BOUND},
+    {"is_valid", 1, snappy_is_valid, ERL_NIF_DIRTY_JOB_CPU_BOUND}
 };
 
 
