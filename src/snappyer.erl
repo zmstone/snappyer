@@ -26,8 +26,7 @@
 
 -spec init() -> ok.
 init() ->
-  _ = erlang:load_nif(so_path(), 0),
-  ok.
+  ok = erlang:load_nif(so_path(), 0).
 
 -spec compress(iodata()) -> {ok, binary()} | {error, binary()}.
 compress(_IoList) ->
