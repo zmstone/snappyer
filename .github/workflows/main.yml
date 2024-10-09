@@ -21,6 +21,6 @@ jobs:
       - uses: erlef/setup-beam@v1
         with:
           otp-version: ${{matrix.otp}}
-          rebar3-version: 3.20.0
+          rebar3-version: 3.24.0
       - run: |
           rebar3 eunit
