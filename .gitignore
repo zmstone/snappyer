@@ -1,8 +1,10 @@
 env.mk
 *.o
+*.obj
 ebin/
 *.d
 *.so
+*.dll
 *.beam
 .rebar
 .deps
